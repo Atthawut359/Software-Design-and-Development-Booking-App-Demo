@@ -543,6 +543,7 @@ app.listen(port, () => {
 ### บันทึกผลลัพธ์การ Get ข้อมูลโดยระบุ ID
 
 ![รูปผลลัพธ์การ Get ข้อมูลโดยระบุ ID](images path/image.png)
+![f3](https://github.com/user-attachments/assets/2544445e-5c3d-480e-b997-51d24c304c00)
 
 8. สร้าง request เพื่อ Update Booking ระบุ Url คือ PUT: {{baseUrl}}/api/bookings/1
    - Headers: Authorization: Bearer {{token}}
@@ -555,6 +556,7 @@ app.listen(port, () => {
 ### บันทึกผลลัพธ์การ PUT เพื่อแก้ไขข้อมูล (ข้อมูล comment จะต้องไม่เป็นค่า null)
 
 ![รูปผลลัพธ์การ PUT ข้อมูล](images path/image.png)
+![f4](https://github.com/user-attachments/assets/073e7cfb-a883-4c4d-9707-9f609c3626c4)
 
 9. สร้าง request เพื่อ Delete Booking ระบุ Url คือ DELETE: {{baseUrl}}/api/bookings/1
    - Headers: Authorization: Bearer {{token}}
@@ -562,6 +564,7 @@ app.listen(port, () => {
 ### บันทึกผลลัพธ์การ DELETE
 
 ![รูปผลลัพธ์การ delete ข้อมูล](images path/image.png)
+![f5](https://github.com/user-attachments/assets/57175a21-f49d-4515-9e2f-e57e8aab0082)
 
 9.1 ปรับปรุงแก้ไขโค้ดเพื่อให้แสดงผลการลบเป็น status : "ลบข้อมูลสำเร็จโดย [ชื่อนักศึกษา]"
 ดังรูป
@@ -1042,6 +1045,9 @@ npm run dev
 1.1 กดปุ่ม Ctrl ค้างไว้ แล้วคลิกลิ้ง ที่ http://localhost:เลข Port ที่รัน เพื่อเปิดหน้าเว็บการทำงาน 
 #### บันทึกผลการรัน
 ![รูปผลการรันหน้า front-end](./image-path/image.png)
+![image](https://github.com/user-attachments/assets/f726be27-4c99-4860-b8e1-d44b796c0ef8)
+
+
 1.2 กด Ctrl + c เพื่อยกเลิกการทำงาน
 
 2. ติดตั้ง dependencies ที่จำเป็น:
@@ -1155,11 +1161,14 @@ export default App;
 2) ทดสอบรัน โดยพิมพ์คำสั่ง npm run dev แล้วบันทึกหน้าผลการรัน
 #### บันทึกรูปผลการรัน
 ![ผลการรัน](./image path/image.png)
+![image](https://github.com/user-attachments/assets/ea6f21a0-5566-410d-a355-0135de8c23dc)
 
 3) กดปุ่ม Ctrl ค้างไว้ แล้วคลิกลิ้ง ที่ http://localhost:เลข Port ที่รัน เพื่อเปิดหน้าเว็บการทำงาน แล้วตรวจสอบ error โดยไม่ต้องหยุดการทำงานของ Application
 #### บันทึกผลการรัน
 ```html
 บันทึกสาเหตุที่ทำให้เกิด error ที่นี่
+ข้อผิดพลาดที่เกิดขึ้นระบุว่าไม่สามารถนำเข้าไฟล์  จากตำแหน่ง  ในไฟล์  ได้ ซึ่งอาจเป็นเพราะไฟล์  ไม่มีอยู่ในตำแหน่งที่ระบุ เส้นทางการนำเข้ามีความผิดพลาด (เช่น ตัวพิมพ์ใหญ่-พิมพ์เล็กไม่ตรงกัน) หรือมีปัญหาเกี่ยวกับการตั้งค่า Vite เช่นในไฟล์  วิธีแก้ไขคือ ตรวจสอบว่าไฟล์มีอยู่จริงในโฟลเดอร์  และชื่อไฟล์ถูกต้อง หรือแก้เส้นทางการนำเข้าให้ตรงกับโครงสร้างโปรเจกต์ และถ้าจำเป็น ให้สร้างไฟล์  ใหม่ หากยังพบปัญหา ลองเพิ่มการตั้งค่าต่อไปนี้ใน  เพื่อปิดการแสดงข้อผิดพลาดแบบ overlay:
+
 ```
 ### 3.2.2 BookingForm Component
 1) สร้างไฟล์ `src/components/BookingForm.jsx`:
@@ -1444,6 +1453,7 @@ export default BookingForm;
 3) ทดสอบป้อนข้อมูลการจอง โดยระบุชื่อผู้จองเป็นชื่อนักศึกษา และบันทึกผลการทดลองที่มีหน้าสรุปการจอง
 #### บันทึกผลการทดลอง
 ![รูปหน้าจองห้องพัก ที่แสดงข้อมูลสรุปการจอง](images-path/image.png)
+![image](https://github.com/user-attachments/assets/13fb0c5c-4e62-479b-aad2-efab58b3e1de)
 
 4) ใช้ Postman  ตรวจสอบว่ามีข้อมูลการจองเพิ่มไปหรือไม่ (หาก token หมดอายุ ต้องทำการ Login แล้วเปลี่ยนค่า token ใหม่)
 
@@ -1823,7 +1833,8 @@ export default App;
 
 ### บันทึกผลการทดลอง 
 ![รูปรายการจองห้องพัก](images-path/image.png)
-   
+   ![image](https://github.com/user-attachments/assets/cb44a1f6-899a-468f-a06b-3009ecd123d6)
+
    
 
 ### 3.2.7 BookingEdit Component
@@ -1952,6 +1963,8 @@ export default BookingEdit;
    
 ### บันทึกผลการทดลอง
 ![ผลการแก้ไขข้อมูลการจอง](./image-path/image.png)
+![image](https://github.com/user-attachments/assets/5a3b173a-3c48-4f74-8b71-a52cf93d8fb5)
+
 
 ### 3.2.8 AdminDashboard Component
 
@@ -2014,5 +2027,6 @@ export default AdminDashboard;
 3) บันทึกผลการทดลอง เมื่อกดปุ่ม "สำหรับผู้ดูแลระบบ"
    ### บันทึกผลการทดลอง
 ![ผลการแก้ไขข้อมูลการจอง](image-path/image.png)
+![image](https://github.com/user-attachments/assets/5227ca52-a0ce-490b-9e25-67386f6c4221)
 
 
